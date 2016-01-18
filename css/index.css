@@ -1,0 +1,110 @@
+@font-face {
+    font-family: FiraSans-Regular;
+    src: url('../fonts/FiraSans-Regular.woff') format('woff');
+}
+
+html,body, #container {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: FiraSans-Regular;
+    font-size:10px;
+    overflow-x: hidden;
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #cecece 100%);
+}
+
+body > #container { 
+    height: auto; 
+    min-height: 100%; 
+}
+
+#content { 
+    padding-bottom: 5rem; 
+}
+
+#titulo {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: -2rem;
+	margin-bottom: -3rem;
+}
+
+#logo {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+#cuerpo {
+    text-align: center;
+}
+
+#cuerpo p {
+	display: inline;
+  	margin-right: 0.5rem;
+	font-size: 2rem;
+}
+
+#MyDNI {
+	display: inline;
+	overflow: hidden;
+	width: 55%;
+	height: 4rem;
+	resize: none;
+	padding: 0 1.2rem;
+	font-size: 1.8rem;
+	line-height: 4rem;
+	border: 0.1rem solid #ccc;
+	border-radius: 0.3rem;
+	box-shadow: none;
+	background: #fff url(../img/shadow.png) repeat-x;
+}
+
+#MyDNI:focus {
+	border: 0.1rem solid #799fba;
+}
+
+#buscar {
+	width: 30%;
+	height: 3.5rem;
+	margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+	-moz-box-sizing: border-box;
+	display: block;    
+	text-overflow: ellipsis;
+	overflow: hidden;
+	background: #fafafa url(../img/default.png) repeat-x left bottom;
+	border: 0.1rem solid #9f9f9f;
+	border-radius: 0.3rem;
+    font-size: 1.5rem;
+	font-family: FiraSans-Regular;
+	font-weight: 600;
+	line-height: 3.8rem;
+	color: #333;
+	text-shadow: 0.1rem 0.1rem 0 rgba(255,255,255,0.3);
+	text-decoration: none;
+	outline: none;
+}
+
+#buscar:active {
+	border-color: #008aaa;
+	background: #008aaa;
+	color: #333;
+}
+
+#buscar::-moz-focus-inner {
+  border: none;
+  outline: none;
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 5rem;
+    margin-top: -5em;
+    text-align: center;
+    font-family: FiraSans-Regular;
+    font-size: 1.2rem;
+}

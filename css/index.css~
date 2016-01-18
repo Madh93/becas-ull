@@ -1,0 +1,96 @@
+@font-face {
+    font-family: FiraSans-Regular;
+    src: url('../fonts/FiraSans-Regular.woff') format('woff');
+}
+
+html,body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: FiraSans-Regular;
+    font-size:10px;
+    overflow-x: hidden;
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #D9CED9 100%);
+}
+
+#titulo {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: -2rem;
+	margin-bottom: -3rem;
+}
+
+#logo {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+#cuerpo {
+	margin-top: -1rem;
+	position: fixed;
+	left:10%;
+    width: 80%;
+}
+
+#cuerpo p {
+	display: inline-block;
+  	margin-right: 0.5rem;
+	font-size: 2rem;
+}
+
+#MyDNI {
+
+	-moz-box-sizing: border-box;
+	display: inline-block;
+	overflow: hidden;
+	width: 80%;
+	height: 4rem;
+	resize: none;
+	padding: 0 1.2rem;
+	font-size: 1.8rem;
+	line-height: 4rem;
+	border: 0.1rem solid #ccc;
+	border-radius: 0.3rem;
+	box-shadow: none; /* override the box-shadow from the system (performance issue) */
+	background: #fff url(../img/shadow.png) repeat-x;
+
+}
+
+#MyDNI::active {
+	border: 0.1rem solid #820000;
+  color: #858585;
+  opacity: 1;
+}
+
+#buscar {
+	width: 30%;
+	height: 3.5rem;
+	margin-top: -0.5rem;
+	padding: 0 1.5rem;
+	-moz-box-sizing: border-box;
+	display: block;
+	vertical-align: middle;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	background: #fafafa url(../img/default.png) repeat-x left bottom;
+	border: 0.1rem solid #9f9f9f;
+	border-radius: 0.3rem;
+	font-size: 1.6rem;
+	font-family: FiraSans-Regular;
+	font-weight: 600;
+	line-height: 3.8rem;
+	color: #333;
+	position:fixed;
+	left:36%;
+	text-shadow: 0.1rem 0.1rem 0 rgba(255,255,255,0.3);
+	text-decoration: none;
+	outline: none;
+}
+
+#buscar:active  {
+  border-color: #008aaa;
+  background: #008aaa;
+  color: #333;
+}

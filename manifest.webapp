@@ -1,0 +1,24 @@
+{
+  "version": "1",
+  "name": "Becas ULL",
+  "description": "Negociado de Becas de la ULL",
+  "launch_path": "/index.html",
+
+  "icons": {
+ 	"32": "/img/logo32.png",
+    "60": "/img/logo60.png",
+	"128": "/img/logo128.png"
+  },
+
+  "developer": {
+	 "name": "Miguel Angel Delgado Hernandez",
+	 "url": "http://www.ull.es"
+  },
+
+  "default_locale": "es",
+  "orientation": "portrait-primary",
+
+  "chrome": { 
+    "navigation": true 
+  }
+}

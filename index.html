@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<link type="text/css" rel="stylesheet" href="css/index.css">
+		<title>Negociado de Becas de la ULL</title>
+		<script>
+            function carga(){
+                localStorage.lastDNI = (localStorage.lastDNI || "");
+                localStorage.accesoBeca = (localStorage.accesoBeca || "");
+                document.forms[0].MDNI.value = localStorage.lastDNI;
+                document.getElementById("pie-text").innerHTML = localStorage.accesoBeca;
+            }
+            function acceso(){
+                var fecha = new Date();
+                localStorage.accesoBeca = "Ultimo acceso: " + fecha.getDate() + "/" + fecha.getMonth()+1 + "/" + fecha.getFullYear() + " a las " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("pie-text").innerHTML = localStorage.accesoBeca;
+                localStorage.lastDNI = document.forms[0].MDNI.value;
+            }
+		</script>
+	</head>
+	<body onload="carga();">
+        <div id="container">
+            <div id="content">
+                <div id="titulo">
+                    <h1>Negociado de Becas</h1>
+                </div>
+                <div id="logo">
+                    <img src="img/ull.png">
+                </div>
+                <form method="post" action="http://193.145.111.205/respuesta.asp">
+                    <div id="cuerpo">
+                        <p>DNI </p>
+                        <input id="MyDNI" name="MDNI" size="9" maxlength="9" type="text">
+                        <input value="Buscar" id="buscar" name="B1" type="submit" onclick="acceso();">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+           <p id="pie-text"></p>
+        </div>
+	</body>
+</html>
